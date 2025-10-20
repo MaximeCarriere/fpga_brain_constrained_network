@@ -22,7 +22,7 @@ The plot below shows the time-series comparison (Membrane Potential $V$ and Spik
 As shown in the raster plot, the FPGA's spikes occur approximately $\\mathbf{0.1\\text{ ms}}$ ($\\text{1 time-step}$) later than the $\\text{NEST}$ spikes. This difference is expected and is due to the inherent difference in integration methods:
 
 1. $\\text{NEST}$ **(Standard):** Uses the **Midpoint or Implicit Euler** method, which tends to predict a spike **within** the current time-step ($\\text{t}$ to $\\text{t} \+ \\Delta\\text{t}$).  
-2. **FPGA (iaf\_psc\_exp\_hls.cpp):** Uses the **Explicit Euler (Forward Euler)** method, where the spike check is performed **after** the voltage is updated to time $\\mathbf{t} \+ \\Delta\\mathbf{t}$. The voltage must exceed the threshold at the end of the step before a spike is registered, naturally introducing a one-step delay.
+2. **FPGA (`iaf\_psc\_exp\_hls.cpp):** Uses the **Explicit Euler (Forward Euler)** method, where the spike check is performed **after** the voltage is updated to time $\\mathbf{t} \+ \\Delta\\mathbf{t}$. The voltage must exceed the threshold at the end of the step before a spike is registered, naturally introducing a one-step delay.
 
 By applying a simple time shift of $\\mathbf{0.1\\text{ ms}}$ in the $\\text{Python}$ plotting script, the spike times are perfectly aligned, confirming the correct behavior of the hardware model.
 
