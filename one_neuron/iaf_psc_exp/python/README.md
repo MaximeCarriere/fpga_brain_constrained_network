@@ -25,3 +25,9 @@ As shown in the raster plot, the FPGA's spikes occur approximately $\\mathbf{0.1
 2. **FPGA (iaf\_psc\_exp\_hls.cpp):** Uses the **Explicit Euler (Forward Euler)** method, where the spike check is performed **after** the voltage is updated to time $\\mathbf{t} \+ \\Delta\\mathbf{t}$. The voltage must exceed the threshold at the end of the step before a spike is registered, naturally introducing a one-step delay.
 
 By applying a simple time shift of $\\mathbf{0.1\\text{ ms}}$ in the $\\text{Python}$ plotting script, the spike times are perfectly aligned, confirming the correct behavior of the hardware model.
+
+*tata
+
+_tata
+
+\tata
