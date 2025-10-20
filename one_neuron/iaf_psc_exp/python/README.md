@@ -15,6 +15,8 @@ The implementation's fidelity was validated by comparing the FPGA's time-series 
 
 ### **Comparison Plot: FPGA vs. NEST**
 
+![Comparison](/comparison_FPGA_NEST.png)
+
 The plot below shows the time-series comparison (Membrane Potential $V$ and Spike Raster $S$) between the FPGA (Orange) and $\\text{NEST}$ (Blue).
 
 ### **Understanding the Spike Time Shift**
@@ -26,8 +28,4 @@ As shown in the raster plot, the FPGA's spikes occur approximately $\\mathbf{0.1
 
 By applying a simple time shift of $\\mathbf{0.1\\text{ ms}}$ in the $\\text{Python}$ plotting script, the spike times are perfectly aligned, confirming the correct behavior of the hardware model.
 
-*tata
 
-_tata
-
-\tata
