@@ -15,7 +15,7 @@ The implementation's fidelity was validated by comparing the FPGA's time-series 
 
 ### **Comparison Plot: FPGA vs. NEST**
 
-![Comparison](/comparison_FPGA_NEST.png)
+![Comparison](./comparison_FPGA_NEST.png)
 
 The plot below shows the time-series comparison (Membrane Potential $V$ and Spike Raster $S$) between the FPGA (Orange) and $\\text{NEST}$ (Blue).
 
